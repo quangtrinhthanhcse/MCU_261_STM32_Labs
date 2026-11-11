@@ -1,0 +1,30 @@
+﻿# Proteus temporary & backup files
+*.workspace
+*.pdsbak
+*.pdsbak.*
+*.tmp
+*.LBK
+
+# IDE metadata
+.metadata/
+
+# STM32CubeIDE compiler & linker outputs
+*.o
+*.d
+*.su
+*.map
+*.elf
+*.bin
+*.list
+*.axf
+*.asm
+*.mk
+makefile
+objects.list
+
+# Keep .hex files for Proteus simulation
+!*.hex
+
+# OS files
+Thumbs.db
+.DS_Store
