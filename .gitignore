@@ -28,3 +28,6 @@ objects.list
 # OS files
 Thumbs.db
 .DS_Store
+
+# Personal study notes (keep local only)
+*STUDY_NOTES*.md

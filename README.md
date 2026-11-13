@@ -28,9 +28,10 @@ MCU_261_STM32_Labs/
 │   └── Proteus/                    # File mô phỏng Proteus
 ├── Lab3/                           # Lab 3: Button Debounce & FSM
 │   ├── STM32_Lab3/                 # Project STM32CubeIDE
-│   ├── Proteus/                    # File mô phỏng Proteus
-│   └── STUDY_NOTES.md              # Ghi chú ôn tập lý thuyết & giải thuật
-└── Lab4/                           # Lab 4: Cooperative Scheduler (Đang phát triển trên nhánh feature/lab4)
+│   └── Proteus/                    # File mô phỏng Proteus
+└── Lab4/                           # Lab 4: Cooperative Scheduler O(1)
+    ├── STM32_Lab4/                 # Project STM32CubeIDE
+    └── Proteus/                    # File mô phỏng Proteus
 ```
 
 ---
@@ -42,7 +43,7 @@ MCU_261_STM32_Labs/
 | **Lab 1** | **GPIO & LED Animations**: Cấu hình I/O cơ bản, điều khiển LED đơn, hiển thị LED 7 đoạn và mô phỏng hệ thống đèn giao thông 4 pha / đồng hồ kim LED. | STM32F103C6 + Proteus | ✅ Hoàn thành |
 | **Lab 2** | **Timer Interrupt & LED Scanning**: Sử dụng ngắt Timer định thời chính xác, kỹ thuật quét LED 7 đoạn và điều khiển ma trận LED 8x8. | STM32F103C6 + Proteus | ✅ Hoàn thành |
 | **Lab 3** | **Button Debounce & State Machine (FSM)**: Chống rung nút nhấn (debounce), xử lý nhấn đúp / nhấn giữ (long-press), xây dựng máy trạng thái hữu hạn (FSM) cho đèn giao thông và chế độ chỉnh thời gian. | STM32F103C6 + Proteus | ✅ Hoàn thành |
-| **Lab 4** | **Cooperative Scheduler**: Hiện thực bộ lập lịch tác vụ cộng tác (Dispatcher / Task Scheduler) không dùng `HAL_Delay`, quản lý hàng đợi tác vụ tối ưu tài nguyên. | STM32F103C6 + Proteus | 🔄 Đang thực hiện |
+| **Lab 4** | **Cooperative Scheduler**: Hiện thực bộ lập lịch tác vụ cộng tác với giải thuật Delta List $O(1)$, điều phối 5 tác vụ độc lập chạy chu kỳ 0.5s, 1s, 1.5s, 2s, 2.5s. | STM32F103C6 + Proteus | ✅ Hoàn thành |
 | **Lab 5** | **UART Communication**: Giao tiếp nối tiếp không đồng bộ, truyền nhận dữ liệu và thực thi lệnh qua UART. | STM32F103C6 + Proteus | ⏳ Kế hoạch |
 
 ---
